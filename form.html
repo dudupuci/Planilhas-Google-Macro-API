@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Agathon - B2B</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style href="style.css">
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Bem-vindo(a)!</h1>
+        <form action="https://api.sheetmonkey.io/form/g91LHFzDcXHLPa4sZngu7H" method="post">
+
+            <label id="label-name">
+                <span>* Nome Completo:</span>
+                <input type="text" name="NomeCliente" maxlength="60" required title="Nome e sobrenome" />
+            </label>
+
+            <label id="label-cpf">
+                <span>* CPF:</span>
+                <input type="text" name="Cpf" minlength="11" maxlength="11" required title="Somente números" />
+            </label>
+
+
+            <label id="label-email">
+                <span>* Email:</span>
+                <input type="email" name="EmailCadastro" value="" maxlength="70" id="input-email"
+                    title="Email principal" />
+            </label>
+
+            <label id="label-endereco">
+                <span>* Endereço:</span>
+                <input type="text" name="Endereco" required title="Rua e Bairro/Zona" maxlength="60" />
+                <div id="complementos">
+                    <span style="font-size:12px">- CEP:</span>
+                    <input type="text" name="Cep" required style="width:30%;" maxlength="8" title="Código Postal" />
+
+                    <span style="font-size:12px">- Nº Casa:</span>
+                    <input type="text" name="NumeroCasa" required style="width:30%;" title="Informe o Nº se houver "
+                        maxlength="5" />
+
+
+                    <span style="font-size:12px">- Complemento:</span>
+                    <input type="text" name="Complemento" required style="width:70%;" maxlength="20"
+                        title="Adicional" />
+                </div>
+
+
+
+
+                <label id="label-dados">
+                    <p>Permito a utilização das imagens retiradas das turmas dos cursos em posts
+                        de redes sociais afins de divulgação, ex: Instagram, Facebook, WhatsApp, etc. Também autorizo o
+                        uso
+                        de dados para cadastro.
+                    </p>
+
+
+
+                </label>
+
+
+                <div id="lgpd-div">
+                    <label for="lgpd-yes"> <input type="radio" id="lgdp-yes" style="margin:10px" value="Yes"
+                            name="Permite LGPD?"
+                            title="Permito/Autorizo e estou de acordo com a Lei Geral de Proteção de Dados, estou ciente de que meus dados estarão seguros e serão apagados quando não forem mais necessários para a empresa.">Sim👍</label>
+                    <label style="margin-left:70px" for="lgpd-no"> <input type="radio" id="lgdp-no" style="margin:10px"
+                            value="No" name="Permite LGPD?"
+                            title="Não permito/Não estou de acordo, não quero que meus dados sejam armazenados ou minha figura seja mostrada em redes sociais, etc.">Não👎</label>
+
+                </div>
+
+
+
+                <button onclick="onClick()" type="submit" id="send-form">
+                    Enviar
+                </button>
+            </label>
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(233, 233, 233);
+    font-family: 'Noto Sans';
+    color: rgb(0, 0, 0);
+    
+}
+
+#container {
+    font-family: 'Noto Sans';
+    margin: 10px auto;
+    height: 850px;
+    width: 300px;
+    border: 1px solid none;
+    border-radius: 8px;
+    background-color: white;
+    -webkit-box-shadow: 24px 10px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 24px 10px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 24px 10px 11px 0px rgba(0, 0, 0, 0.75);
+
+
+}
+
+form {
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+}
+
+#lgpd-div {
+    display: flex;
+   justify-content: center;
+   margin-right: 60px;
+    
+}
+
+#complementos {
+    color: rgb(75, 75, 75);
+    display: grid;
+
+}
+
+
+h1 {
+    font-size: 26px;
+    padding: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    max-height: 35px;
+    border-radius: 18px;
+    margin-top: 50px;
+    margin-left: -5px;
+    color: white;
+    border: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+#label-email, #label-cpf, #label-endereco, #label-dados {
+    margin-top: 30px;
+}
+
+
+input,
+label,
+button {
+    display: block;
+
+}
+
+#label-name,
+#label-email, #label-cpf, #label-endereco {
+    margin-left: 60px;
+}
+
+#label-dados{
+    text-align: center;
+    margin: auto;
+    margin-right: 60px;
+    font-size: 14px;
+    color: rgba(0, 0, 255, 0.61);
+    font-weight: bold;
+}
+
+
+
+.loading {  
+    margin-top: -10px;
+    width: 50px;
+    animation: spin .4s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(360deg);
+    }
+
+}
